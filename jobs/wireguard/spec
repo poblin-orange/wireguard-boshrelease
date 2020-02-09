@@ -6,4 +6,14 @@ templates:
   bin/post-start.erb: bin/post-start  
   bin/pre-stop.erb: bin/pre-stop
   bin/post-deploy.erb: bin/post-deploy
-properties: {}
+  config/wg0.conf.erb: config/wg0.conf 
+properties:
+  wireguard.address:
+    description: wireguard adress
+    default: 192.168.2.2/24
+  wireguard.listen_port:
+    description: wireguard listen port
+    default: 51820
+  wireguard.private_key:
+    description: wireguard private key
+
