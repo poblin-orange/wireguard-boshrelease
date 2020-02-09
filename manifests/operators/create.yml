@@ -1,0 +1,7 @@
+---
+- type: replace
+  path: /releases/name=wireguard
+  value:
+    name: wireguard
+    version: create
+    url: file://.

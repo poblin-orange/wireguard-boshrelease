@@ -1,0 +1,6 @@
+---
+name: wireguard
+packages: []
+templates:
+  ignoreme: ignoreme
+properties: {}
