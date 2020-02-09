@@ -16,4 +16,19 @@ properties:
     default: 51820
   wireguard.private_key:
     description: wireguard private key
+  wireguard.dns:
+    description: dns the server will give as dhcp
+    default: 1.1.1.1,8.8.8.8
 
+  wireguard.peer.endpoint:
+    description: address of peer to join
+    
+  wireguard.peer.public_key:
+    description: public key of peer
+
+  wireguard.peer.allowed_ips:
+    description: 
+
+  wireguard.peer.persistent_keepalive:
+    description:
+    default: 25
