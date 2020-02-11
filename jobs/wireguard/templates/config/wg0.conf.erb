@@ -1,8 +1,8 @@
 [Interface]
 Address = <%= p('wireguard.address') %>
 SaveConfig = true
-PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE;
-PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE;
+PostUp = <%= p('wireguard.postup') %>
+PostDown = <%= p('wireguard.postdown') %>
 ListenPort = <%= p('wireguard.listen_port') %>
 PrivateKey = <%= p('wireguard.private_key') %>
 DNS = <%= p('wireguard.dns') %>
