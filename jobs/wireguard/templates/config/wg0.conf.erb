@@ -8,7 +8,9 @@ PrivateKey = <%= p('wireguard.private_key') %>
 DNS = <%= p('wireguard.dns') %>
 
 [Peer]
-Endpoint = <%= p('wireguard.peer.endpoint') %>
+<% if_p('wireguard.peer.endpoint') do |value| %>
+Endpoint = <%= value %>
+<% end %>
 PublicKey = <%= p('wireguard.peer.public_key') %>
 AllowedIPs = <%= p('wireguard.peer.allowed_ips') %>
 PersistentKeepalive = <%= p('wireguard.peer.persistent_keepalive') %>
