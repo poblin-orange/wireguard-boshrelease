@@ -7,6 +7,14 @@ ListenPort = <%= p('wireguard.listen_port') %>
 PrivateKey = <%= p('wireguard.private_key') %>
 DNS = <%= p('wireguard.dns') %>
 
+<% if_p('wireguard.preup') do |value| %>
+PreUp = <%= value %>
+<% end %>
+
+<% if_p('wireguard.predown') do |value| %>
+PreDown = <%= value %>
+<% end %>
+
 [Peer]
 <% if_p('wireguard.peer.endpoint') do |value| %>
 Endpoint = <%= value %>

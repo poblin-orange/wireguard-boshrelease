@@ -19,17 +19,24 @@ properties:
   wireguard.dns:
     description: dns the server will give as dhcp
     default: 1.1.1.1,8.8.8.8
+    
+  wireguard.preup:
+    description: script to apply before wg is up.
+  
   wireguard.postup:
     description: script to apply after wg is up. default is setting nat
     default: iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    
+  wireguard.predown:
+    description: script to apply before wg is down.
+  
   wireguard.postdown:
     description: script to apply after wg is up. default is setting nat
     default: iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 
-
   wireguard.peer.endpoint:
     description: address of peer to join
-    
+
   wireguard.peer.public_key:
     description: public key of peer
 
