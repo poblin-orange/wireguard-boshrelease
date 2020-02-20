@@ -1,8 +1,7 @@
 [Interface]
 Address = <%= p('wireguard.address') %>
 SaveConfig = true
-PostUp = <%= p('wireguard.postup') %>
-PostDown = <%= p('wireguard.postdown') %>
+
 ListenPort = <%= p('wireguard.listen_port') %>
 PrivateKey = <%= p('wireguard.private_key') %>
 DNS = <%= p('wireguard.dns') %>
@@ -13,8 +12,22 @@ PreUp = <%= preup %>
 <% end %>
 <% end %>
 
+<% if_p('wireguard.postup') do |value| %>
+<% p('wireguard.postup').each do |postup| %>
+PostUp = <%= postup %>
+<% end %>
+<% end %>
+
 <% if_p('wireguard.predown') do |value| %>
-PreDown = <%= value %>
+<% p('wireguard.predown').each do |predown| %>
+PreDown = <%= predown %>
+<% end %>
+<% end %>
+
+<% if_p('wireguard.postdown') do |value| %>
+<% p('wireguard.postdown').each do |postdown| %>
+PostDown = <%= postdown %>
+<% end %>
 <% end %>
 
 [Peer]
