@@ -8,7 +8,9 @@ PrivateKey = <%= p('wireguard.private_key') %>
 DNS = <%= p('wireguard.dns') %>
 
 <% if_p('wireguard.preup') do |value| %>
-PreUp = <%= value %>
+<% p('wireguard.preup').each do |preup| %>
+PreUp = <%= preup %>
+<% end %>
 <% end %>
 
 <% if_p('wireguard.predown') do |value| %>
