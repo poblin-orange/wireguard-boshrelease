@@ -46,3 +46,8 @@ properties:
   wireguard.peer.persistent_keepalive:
     description:
     default: 25
+
+  wireguard.debug:
+    description: enable debug mode. defining this property with any value will activate debug mode
+
+
