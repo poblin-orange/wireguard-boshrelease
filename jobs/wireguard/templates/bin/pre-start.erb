@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #copy templated wireguard conf file to expected location
-cp -f /var/vcap/jobs/wireguard/config/wg0.conf /etc/wireguard
+cp -f /var/vcap/jobs/wireguard/config/wg0.conf /etc/wireguard/wg0.conf
 
 <% if_p('wireguard.debug') do |value| %>
 modprobe wireguard && echo module wireguard +p > /sys/kernel/debug/dynamic_debug/control

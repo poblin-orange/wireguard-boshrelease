@@ -1,6 +1,8 @@
 #!/bin/bash
 
-## package installation
-add-apt-repository ppa:wireguard/wireguard
-apt-get update
-apt-get --assume-yes install wireguard
+## install the compiled sources in the vm
+cd /var/vcap/packages/wireguard-src
+
+make -C wireguard-linux-compat/src install
+make -C wireguard-tools/src install
+
