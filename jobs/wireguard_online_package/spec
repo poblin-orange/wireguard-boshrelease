@@ -1,0 +1,6 @@
+---
+name: wireguard_online_package
+packages: []
+templates:
+  bin/pre-start.erb: bin/pre-start
+properties: []
