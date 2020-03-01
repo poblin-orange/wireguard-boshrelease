@@ -8,4 +8,14 @@ CPUS=$(grep -c ^processor /proc/cpuinfo)
 # $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
 export HOME=/var/vcap
 
+cd $BOSH_INSTALL_TARGET
 
+ 
+tar xfv $BOSH_COMPILE_TARGET/wireguard/wireguard-sources.tgz
+
+make -C wireguard-linux-compat/src -j$(nproc)
+make -C wireguard-linux-compat/src install
+
+make -C wireguard-tools/src -j$(nproc)
+make -C wireguard-tools/src install
+ 
