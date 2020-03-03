@@ -1,6 +1,13 @@
 [Interface]
 Address = <%= p('wireguard.address') %>
-SaveConfig = true
+SaveConfig = false
+Table = <%= p('wireguard.table') %>
+
+<% if_p('wireguard.mtu') do |value| %>
+<% p('wireguard.mtu').each do |mtu| %>
+MTU = <%= mtu %>
+<% end %>
+<% end %>
 
 ListenPort = <%= p('wireguard.listen_port') %>
 PrivateKey = <%= p('wireguard.private_key') %>
