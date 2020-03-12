@@ -34,15 +34,6 @@ properties:
     description: script to apply after wg is up. default is setting nat
     default: [ "iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE" ]
 
-  wireguard.peer.endpoint:
-    description: address of peer to join
-
-  wireguard.peer.public_key:
-    description: public key of peer
-
-  wireguard.peer.allowed_ips:
-    description: 
-
   wireguard.table:
     description: "Controls the routing table to which routes are added. There are two special values: ‘off’ disables the creation of routes altogether, and ‘auto’ (the default) adds routes to the default table and enables special handling of default routes."
     default: auto
@@ -50,11 +41,18 @@ properties:
   wireguard.mtu:
     description: "if not specified, the MTU is automatically determined from the endpoint addresses or the system default route, which is usually a sane choice. However, to manually specify an MTU to override this automatic discovery, this value may be specified explicitly."
 
-  wireguard.peer.persistent_keepalive:
-    description:
-    default: 25
-
   wireguard.debug:
     description: enable debug mode. defining this property with any value will activate debug mode
+
+  wireguard.peers:
+    description: |
+      array of peers,
+      wireguard:
+        peers:
+        - endpoint: x.x.x.x #address of peer to join
+          public_key: yyyyy
+          description: peer description
+          allowed_ips: x.x.x.y/32,z.z.z.z/24
+          persistent_keepalive: 25
 
 

@@ -37,10 +37,14 @@ PostDown = <%= postdown %>
 <% end %>
 <% end %>
 
+<% p('wireguard.peers').each do |peer| %>
 [Peer]
-<% if_p('wireguard.peer.endpoint') do |value| %>
-Endpoint = <%= value %>
+Endpoint = <%= peer["endpoint"] %>
+PublicKey = <%= peer["public_key"] %>
+AllowedIPs = <%= peer["allowed_ips"] %>
+PersistentKeepalive = <%= peer.fetch("persistent_keepalive", "25" ) %>
 <% end %>
-PublicKey = <%= p('wireguard.peer.public_key') %>
-AllowedIPs = <%= p('wireguard.peer.allowed_ips') %>
-PersistentKeepalive = <%= p('wireguard.peer.persistent_keepalive') %>
+
+
+
+
