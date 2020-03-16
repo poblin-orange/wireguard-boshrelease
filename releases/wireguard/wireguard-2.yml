@@ -1,0 +1,31 @@
+name: wireguard
+version: "2"
+commit_hash: a50783d
+uncommitted_changes: false
+jobs:
+- name: wireguard
+  version: f0a045ae91aafd8ba61489ccac8ea3fe5a3f2cc18ef69e61d207fd16ba317cd5
+  fingerprint: f0a045ae91aafd8ba61489ccac8ea3fe5a3f2cc18ef69e61d207fd16ba317cd5
+  sha1: sha256:4840a8fdf8f5633434c2d745154b4343e7ea9ee21695f499454eb4f58e896110
+  packages: []
+- name: wireguard_online_package
+  version: 8965fb9c03ffb351802566535809b14b88b47d174fc58d6e02fbe778d5bd957a
+  fingerprint: 8965fb9c03ffb351802566535809b14b88b47d174fc58d6e02fbe778d5bd957a
+  sha1: sha256:e3c9eca4dad0fb064be7f2a2308e6d551ba1961ca0bedc760416311c42df6a46
+  packages: []
+- name: wireguard_package
+  version: d7f3dfe3e85317980717b3f3b1e03fdbf0899970d37c2bb5b48f8a8179ecd487
+  fingerprint: d7f3dfe3e85317980717b3f3b1e03fdbf0899970d37c2bb5b48f8a8179ecd487
+  sha1: sha256:26daa5d13c2240995c2f06f5a93041f5529cc2c7c84e86b0b3c93c3d2e28a7e5
+  packages:
+  - wireguard-src
+packages:
+- name: wireguard-src
+  version: ac25ed265ab2026f4d92942d6d505996084d536788a6b2bc38526e56f292fd3b
+  fingerprint: ac25ed265ab2026f4d92942d6d505996084d536788a6b2bc38526e56f292fd3b
+  sha1: sha256:c782b597e09b0b4069fc0ed97e07d3a499201eedd7cc020a96eb28d64b759a07
+  dependencies: []
+license:
+  version: cf0ca1fe65dee9607c7bb9460a3f20835e582cbb7f5b2c3625fba2e21d7e91b9
+  fingerprint: cf0ca1fe65dee9607c7bb9460a3f20835e582cbb7f5b2c3625fba2e21d7e91b9
+  sha1: sha256:e102e996178d4a5deb17a0365024188b22879936fb0d46750ce0a21038d7fe75
