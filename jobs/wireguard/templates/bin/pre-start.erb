@@ -5,7 +5,9 @@
 #apt-get update -q -y
 #apt-get -q -y install wireguard
 
-dpkg -i /var/vcap/packages/wireguard-deb/*.deb
+dpkg -i /var/vcap/packages/wireguard-deb/wireguard.deb
+dpkg -i /var/vcap/packages/wireguard-deb/wireguard-tools.deb
+dpkg -i /var/vcap/packages/wireguard-deb/wireguard-dkms.deb
 
 #copy templated wireguard conf file to expected location
 cp -f /var/vcap/jobs/wireguard/config/wg0.conf /etc/wireguard
