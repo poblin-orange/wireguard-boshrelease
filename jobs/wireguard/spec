@@ -1,6 +1,7 @@
 ---
 name: wireguard
-packages: []
+packages:
+- wireguard-deb
 templates:
   bin/pre-start.erb: bin/pre-start
   bin/post-start.erb: bin/post-start  
