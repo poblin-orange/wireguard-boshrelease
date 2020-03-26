@@ -1,0 +1,33 @@
+#!/bin/bash
+
+RUN_DIR=/var/vcap/sys/run/wireguard
+LOG_DIR=/var/vcap/sys/log/wireguard
+PIDFILE=${RUN_DIR}/pid
+
+case $1 in
+
+  start)
+    mkdir -p $RUN_DIR $LOG_DIR
+    chown -R vcap:vcap $RUN_DIR $LOG_DIR
+
+    echo $$ > $PIDFILE
+    exec 1>> $LOG_DIR/wireguard.stdout.log
+    exec 2>> $LOG_DIR/wireguard.stderr.log
+    exec  /usr/bin/wg-quick up wg0
+
+    ;;
+
+  stop)
+    exec 1>> $LOG_DIR/wireguard.stdout.log
+    exec 2>> $LOG_DIR/wireguard.stderr.log
+    exec  /usr/bin/wg-quick down wg0
+    kill -9 `cat $PIDFILE`
+    rm -f $PIDFILE
+
+    ;;
+
+  *)
+    echo "Usage: ctl {start|stop}" ;;
+
+esac
+

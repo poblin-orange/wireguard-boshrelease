@@ -3,6 +3,7 @@ name: wireguard
 packages:
 - wireguard-deb
 templates:
+  bin/ctl.erb: bin/ctl
   bin/pre-start.erb: bin/pre-start
   bin/post-start.erb: bin/post-start  
   bin/pre-stop.erb: bin/pre-stop
