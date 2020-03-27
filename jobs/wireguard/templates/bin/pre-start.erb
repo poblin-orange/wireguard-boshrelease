@@ -11,9 +11,9 @@ if test -f "$FILE"; then
     echo "$FILE exist"
 else
 
-    dpkg -i /var/vcap/packages/wireguard-deb/wireguard.deb
     dpkg -i /var/vcap/packages/wireguard-deb/wireguard-tools.deb
     dpkg -i /var/vcap/packages/wireguard-deb/wireguard-dkms.deb
+    dpkg -i /var/vcap/packages/wireguard-deb/wireguard.deb
 fi
 
 #copy templated wireguard conf file to expected location
