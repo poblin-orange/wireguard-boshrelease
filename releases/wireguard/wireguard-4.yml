@@ -1,0 +1,37 @@
+name: wireguard
+version: "4"
+commit_hash: 00bcc5f
+uncommitted_changes: false
+jobs:
+- name: wireguard
+  version: 946fcf4de256dcc11ff7b415f5e48df41d348044f8742a40bcd151aeee58f8da
+  fingerprint: 946fcf4de256dcc11ff7b415f5e48df41d348044f8742a40bcd151aeee58f8da
+  sha1: sha256:81ded2d61572db92b8f369b188a18a72c0dd699aa9f41b28461b442f0b9cc44e
+  packages:
+  - wireguard-deb
+- name: wireguard_online_package
+  version: 8965fb9c03ffb351802566535809b14b88b47d174fc58d6e02fbe778d5bd957a
+  fingerprint: 8965fb9c03ffb351802566535809b14b88b47d174fc58d6e02fbe778d5bd957a
+  sha1: sha256:e3c9eca4dad0fb064be7f2a2308e6d551ba1961ca0bedc760416311c42df6a46
+  packages: []
+- name: wireguard_package
+  version: d7f3dfe3e85317980717b3f3b1e03fdbf0899970d37c2bb5b48f8a8179ecd487
+  fingerprint: d7f3dfe3e85317980717b3f3b1e03fdbf0899970d37c2bb5b48f8a8179ecd487
+  sha1: sha256:26daa5d13c2240995c2f06f5a93041f5529cc2c7c84e86b0b3c93c3d2e28a7e5
+  packages:
+  - wireguard-src
+packages:
+- name: wireguard-deb
+  version: 7e25e116398e4fff57eaf9cb1bd5a3f701afbcf02f33a28481c25f1899ec3ecb
+  fingerprint: 7e25e116398e4fff57eaf9cb1bd5a3f701afbcf02f33a28481c25f1899ec3ecb
+  sha1: sha256:8e83211ea1483a3c4548c131a1f2e3384e199c8b6e8498d15a3a295e0f6bb417
+  dependencies: []
+- name: wireguard-src
+  version: 7ec80e1cd349843e48cc2ec39ceb3bf597a2f49e200fd867ad369dfa915c3a70
+  fingerprint: 7ec80e1cd349843e48cc2ec39ceb3bf597a2f49e200fd867ad369dfa915c3a70
+  sha1: sha256:7c5428f116e02d6213818101779d852632c609d45d385bf6c41bd851c2520b84
+  dependencies: []
+license:
+  version: cf0ca1fe65dee9607c7bb9460a3f20835e582cbb7f5b2c3625fba2e21d7e91b9
+  fingerprint: cf0ca1fe65dee9607c7bb9460a3f20835e582cbb7f5b2c3625fba2e21d7e91b9
+  sha1: sha256:e102e996178d4a5deb17a0365024188b22879936fb0d46750ce0a21038d7fe75
