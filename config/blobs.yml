@@ -1,15 +1,16 @@
 wireguard/wireguard-dkms.deb:
-  size: 258174
-  sha: sha256:b34bf076db580b81db6fad6dd9317fcc32f507be1bf60cfddfcc830c8c157843
+  size: 250608
+  object_id: 753c9096-825a-4606-6762-057f0accf465
+  sha: sha256:8ac524f28ae82a6705b8af6a5dc1f0145266a3f40aa231ffe3c938ffe7d289da
 wireguard/wireguard-sources.tgz:
-  size: 5335040
-  object_id: 5d4e738e-4952-4784-5202-fec0b3ae075b
-  sha: sha256:bfdab5a5fe8115ab50f14f5d2721bcaf1cc927efabe94995e924319cc869276f
+  size: 5570560
+  object_id: 9d8009f3-380e-4dde-7ad1-d33e3f4a4a30
+  sha: sha256:ad04ab47be646bf35cd0f95e82d2688e633bdffa8362df6585541e4d48c77b54
 wireguard/wireguard-tools.deb:
   size: 92276
   object_id: 58016d9c-ea81-4343-579c-206c0220eb8c
   sha: sha256:37205e478062959b76dddecd2fbaa556755925743a2065c0338511e7ae60225a
 wireguard/wireguard.deb:
-  size: 7906
-  object_id: e7f0b967-2551-4a1a-5212-45e5cfa3b0cf
-  sha: sha256:54adc6f6182a9a5a602d20243533bcbd61a5a1a08298c544e033ac5cfd3079aa
+  size: 3188
+  object_id: 4d17c1f9-bdbb-4326-7382-2344cc62f668
+  sha: sha256:b7ac6c88b3305c26f32cfa5e329fac96305d1ce192fe12eb763d5c48d2de2ee9

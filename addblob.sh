@@ -7,7 +7,7 @@ cd src/wireguard-src
 #get wireguard sources
 git clone https://git.zx2c4.com/wireguard-linux-compat
 cd wireguard-linux-compat
-git checkout v0.0.20200215 
+git checkout v1.0.20200520 
 cd ..
 
 #get wireguard tools sources

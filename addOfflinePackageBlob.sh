@@ -10,8 +10,11 @@ apt-get download wireguard
 
 #get wireguard tools sources
 apt-get download wireguard-tools
+apt-get download wireguard-dkms
+
 cd ..
 pwd
-bosh add-blob ./src/wireguard_1.0.20200319-0ppa1~16.04_all.deb wireguard/wireguard.deb wireguard/wireguard
-bosh add-blob ./src/wireguard-tools_1.0.20200319-0ppa1~16.04_amd64.deb wireguard/wireguard-tools.deb wireguard/wireguard/tools
-bosh add-blob ./src/wireguard-dkms_0.0.20200318-0ppa1~16.04_all.deb wireguard/wireguard-dkms
+bosh add-blob ./src/wireguard-packages/wireguard_1.0.20200513-1~16.04.1_all.deb wireguard/wireguard.deb 
+bosh add-blob ./src/wireguard-packages/wireguard-tools_1.0.20200513-1~16.04.1_amd64.deb  wireguard-tools.deb
+bosh add-blob ./src/wireguard-packages/wireguard-dkms_1.0.20200611-1ubuntu1~16.04.1_all.deb wireguard/wireguard-dkms.deb
+

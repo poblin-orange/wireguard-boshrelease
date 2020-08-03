@@ -2,6 +2,6 @@
 name: wireguard-deb
 dependencies: []
 files:
-- wireguard/wireguard*.deb
-- wireguard/wireguard-tools*.deb
-- wireguard/wireguard-dkms*.deb
+- wireguard/wireguard.deb
+- wireguard/wireguard-tools.deb
+- wireguard/wireguard-dkms.deb
