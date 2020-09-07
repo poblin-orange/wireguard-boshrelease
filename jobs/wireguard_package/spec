@@ -1,7 +1,0 @@
----
-name: wireguard_package
-packages:
-- wireguard-src
-templates:
-  bin/pre-start.erb: bin/pre-start
-properties: {}

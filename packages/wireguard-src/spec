@@ -1,5 +1,0 @@
----
-name: wireguard-src
-dependencies: []
-files:
-- wireguard/wireguard-sources.tgz
