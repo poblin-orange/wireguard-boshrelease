@@ -1,0 +1,21 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+directories:
+
+- path: src 
+  contents:
+  - path: debs
+    # fetches iftop deb package 
+    http:
+      # asset URL (required)
+      url: http://archive.ubuntu.com/ubuntu/pool/universe/i/iftop/iftop_1.0~pre4-4_amd64.deb
+      # verification checksum (optional)
+      sha256: "a509db288bd71dfb79ad7e9af7c93691a6cb598cbef29f1a6ef89ec2fd3ba102"
+      
+  - path: img
+    # fetches ntopng docker image
+    image:
+      # image URL; could be plain, tagged or digest reference (required)
+      url: ntop/ntopng:stable
+      # specify wether to skip TLS verification; defaults to false (optional;v0.18.0+)
+      dangerouSkipTLSVerify: false

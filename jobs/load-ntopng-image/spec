@@ -1,0 +1,7 @@
+---
+name: load-ntopng-image
+packages:
+- ntopng-container-image
+templates:
+  bin/post-start.erb: bin/post-start
+properties: {}
