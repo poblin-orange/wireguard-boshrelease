@@ -1,3 +1,11 @@
+iftop/iftop.deb:
+  size: 35988
+  object_id: d19cc9ca-14d6-4605-4fe5-c32915a1ecba
+  sha: sha256:a509db288bd71dfb79ad7e9af7c93691a6cb598cbef29f1a6ef89ec2fd3ba102
+ntop/ntop.tar.gz:
+  size: 223049470
+  object_id: f70a176a-302e-4b2f-6795-79ca0c364d05
+  sha: sha256:fe3eb13d5d00c48a32d7c804a4e8c3349b3a1960f999b3a0bf458a03f9cc6674
 wireguard/wireguard-dkms.deb:
   size: 250608
   object_id: b65f07d7-8b58-4b64-509f-ebdc95e7a209

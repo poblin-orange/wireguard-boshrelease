@@ -1,4 +1,4 @@
 ---
 name: iftop
 files:
-- debs/**/* 
+- iftop/*.deb

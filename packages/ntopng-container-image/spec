@@ -2,4 +2,4 @@
 name: ntop-container-image
 dependencies: []
 files:
-- ntopng/ntopng.img
+- ntop/ntop.tar.gz
