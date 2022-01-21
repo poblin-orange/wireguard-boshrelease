@@ -2,7 +2,7 @@
 
 set -euxo pipefail
 
-DEBS_PACKAGES=/var/vcap/packages/open-iscsi
+DEBS_PACKAGES=/var/vcap/packages/iftop
 
 install_package() {
   local package=$1
@@ -19,11 +19,4 @@ install_package() {
   done
 }
 
-install_package "${DEBS_PACKAGES:?}/open-iscsi_2.0.873+git0.3b4b4500-14ubuntu3.7_amd64.deb"
-sudo sed -i 's/node.session.timeo.replacement_timeout = 120/node.session.timeo.replacement_timeout = 400/g' /etc/iscsi/iscsid.conf
-service open-iscsi restart
-
-echo "done prestart, open-iscsi service is configured"
-cat /etc/iscsi/initiatorname.iscsi
-sudo systemctl status iscsid
-sudo mount --make-rshared /
+install_package "${DEBS_PACKAGES:?}/iftop.deb"

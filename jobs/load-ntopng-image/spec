@@ -3,5 +3,5 @@ name: load-ntopng-image
 packages:
 - ntopng-container-image
 templates:
-  bin/post-start.erb: bin/post-start
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
 properties: {}
