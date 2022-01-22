@@ -1,5 +1,0 @@
----
-name: mtr-pkg-install
-packages: ["mtr"]
-templates:
-  bin/pre-start.sh: bin/pre-start

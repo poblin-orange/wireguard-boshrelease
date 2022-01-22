@@ -12,11 +12,4 @@ directories:
       url: http://archive.ubuntu.com/ubuntu/pool/universe/i/iftop/iftop_1.0~pre4-4_amd64.deb
       # verification checksum (optional)
       sha256: "a509db288bd71dfb79ad7e9af7c93691a6cb598cbef29f1a6ef89ec2fd3ba102"
-  - path: debs/mtr
-    # fetches iftop deb package 
-    http:
-      # asset URL (required)
-      url: http://archive.ubuntu.com/ubuntu/pool/universe/m/mtr/mtr_0.94-2ubuntu1_amd64.deb
-      # verification checksum (optional)
-      sha256: "e61f7d16198eaa77169c65ccf7dafd543cedbe89e152e6ae24b4db59f9ee02a1"
 

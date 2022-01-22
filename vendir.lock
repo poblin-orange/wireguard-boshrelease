@@ -3,7 +3,5 @@ directories:
 - contents:
   - http: {}
     path: debs/iftop
-  - http: {}
-    path: debs/mtr
   path: src
 kind: LockConfig
