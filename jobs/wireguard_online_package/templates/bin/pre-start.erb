@@ -1,9 +1,0 @@
-#!/bin/bash
-
-## package installation
-add-apt-repository ppa:wireguard/wireguard
-apt-get update -q -y
-apt-get -q -y install wireguard
-
-#copy templated wireguard conf file to expected location
-cp -f /var/vcap/jobs/wireguard/config/wg0.conf /etc/wireguard
