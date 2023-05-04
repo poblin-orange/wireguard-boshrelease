@@ -1,15 +1,13 @@
 iftop/iftop.deb:
   size: 35988
-  object_id: 9fa1670a-501f-4775-4689-ae2f3aed347a
   sha: sha256:a509db288bd71dfb79ad7e9af7c93691a6cb598cbef29f1a6ef89ec2fd3ba102
 ntop/ntop.tar.gz:
   size: 223049470
   object_id: f70a176a-302e-4b2f-6795-79ca0c364d05
   sha: sha256:fe3eb13d5d00c48a32d7c804a4e8c3349b3a1960f999b3a0bf458a03f9cc6674
 wireguard/wireguard-tools.deb:
-  size: 89262
-  object_id: 245bad99-9f7f-4ba0-73a5-e38cc9d14aa1
-  sha: sha256:235b178424c108e38aa30940ab72b0f2122911df9e1d6c244b9fb0d82903fac0
+  size: 90232
+  sha: sha256:71343e1d6f66dabae98234b9e0e3ba516f14cb9ac764bd691f69b606d5153003
 wireguard/wireguard.deb:
   size: 3184
   object_id: a4a7295e-88bc-40bf-623b-aa96e6cc734d
