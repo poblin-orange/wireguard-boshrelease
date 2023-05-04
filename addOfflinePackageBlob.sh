@@ -14,7 +14,7 @@ cd src/wireguard-packages
 
 cd ..
 pwd
-bosh add-blob ./src/wireguard-packages/wireguard_1.0.20200513-1~16.04.2_all.deb     wireguard/wireguard.deb 
-bosh add-blob ./src/wireguard-packages/wireguard-tools_1.0.20200513-1~16.04.2_amd64.deb  wireguard/wireguard-tools.deb
-bosh add-blob ./src/wireguard-packages/wireguard-dkms_1.0.20200611-1ubuntu1~16.04.1_all.deb wireguard/wireguard-dkms.deb
+bosh add-blob ./src/wireguard-packages/wireguard-tools_1.0.20200513-1~18.04.2_amd64.deb  wireguard/wireguard-tools.deb
+
+
 

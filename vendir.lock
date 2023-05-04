@@ -3,5 +3,7 @@ directories:
 - contents:
   - http: {}
     path: debs/iftop
+  - http: {}
+    path: debs/wireguard-tools
   path: src
 kind: LockConfig
